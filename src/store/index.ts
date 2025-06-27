@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import testReduxReducer from "./modules/testRedux";
+import goodsReducre  from "./modules/goods"
 
 // 创建根store组合子模块
 const store = configureStore({
     reducer: {
-        testRedux: testReduxReducer
+        testRedux: testReduxReducer,
+        goods: goodsReducre
     }
 })
 
